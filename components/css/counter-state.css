@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+.counter {
+    width: 120px;
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.counter--count {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+.counter--minus {
+    bottom: -25px;
+    left: -5px;
+}
+
+.counter--plus {
+    bottom: -25px;
+    right: -5px;
+}
